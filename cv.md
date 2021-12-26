@@ -29,8 +29,13 @@ English (A2) -But I'm working on improving my English (B1 in process…).
 
 ### Code example:
 
-    function multiply(a, b){
-    return a * b }
+   function twiceAsOld(dadYearsOld, sonYearsOld) {
+  let result;
+  let dif = dadYearsOld - sonYearsOld;
+  let  count = sonYearsOld * 2 - dadYearsOld;
+  result = Math.abs(count);
+  return result; 
+}
 
 ---
 
