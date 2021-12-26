@@ -1,0 +1,9 @@
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  border: none;
+}
+
+body {
+  position: flex;
+}
