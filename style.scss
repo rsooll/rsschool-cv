@@ -6,13 +6,31 @@
 
 body {
     position: relative;
-    background-color: rebeccapurple;
+    background-color: black;
 }
-
+.list {
+    list-style-type: none;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+.line{
+height: 35px;
+background-color: royalblue;
+}
 .CVWrapper {
     position: relative;
+    max-width: 1440px;
     margin: 0 auto;
     background-color: red;
+}
+
+
+.header{
+    background-image: url(assets/img/header_bac.webp);
+    background-size: cover;
+    // ! background-size: contain; посмотреть, как лучше будет смотреться
 }
 
 h1 {
