@@ -5,5 +5,16 @@
 }
 
 body {
-  position: flex;
+  position: relative;
+  background-color: rebeccapurple;
+}
+
+.CVWrapper {
+  position: relative;
+  margin: 0 auto;
+  background-color: red;
+}
+
+h1 {
+  text-align: center;
 }
