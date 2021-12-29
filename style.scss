@@ -4,35 +4,153 @@
     border: none;
 }
 
+@font-face {
+    font-family: 'Pushster', cursive;
+    src: url(fonts/Pushster.ttf);
+}
+
+@font-face {
+    font-family: 'Abel', sans-serif;
+    src: url(fonts/Abel.ttf);
+}
+
+
 body {
     position: relative;
-    background-color: black;
+
 }
+
 .list {
     list-style-type: none;
 }
-.link{
+
+.link {
     text-decoration: none;
     color: black;
 }
-.line{
-height: 35px;
-background-color: royalblue;
+
+.title_fonts {
+    font-family: 'Pushster', cursive;
+    text-align: center;
+    }
+h2{
+    color: rgb(57, 185, 210);
 }
+.text_fonts {
+    font-family: 'Abel', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.7em;
+}
+
+.header__title {
+    font-size: 2.5em;
+    padding-top: 20px;
+}
+
 .CVWrapper {
     position: relative;
     max-width: 1440px;
     margin: 0 auto;
-    background-color: red;
 }
 
 
-.header{
+.header {
     background-image: url(assets/img/header_bac.webp);
     background-size: cover;
     // ! background-size: contain; посмотреть, как лучше будет смотреться
 }
 
-h1 {
-    text-align: center;
+.header__nav {
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
 }
+
+.nav__items {
+    padding: 20px;
+
+    :hover {
+        color: rgb(133, 116, 23);
+        transition-duration: .5s;
+    }
+}
+
+.nav_font {
+    font-size: 1.5em;
+}
+
+.section_title {
+    font-size: 2em;
+    padding: 20px;
+}
+
+.article__text {
+    padding: 0 15px;
+}
+
+.article__text_bigger {
+    font-size: 1.5em;
+}
+
+.list_item_icons {
+    &::before {
+        content: '\2611';
+        color: rgb(0, 174, 255);
+        padding-right: 5px;
+
+    }
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.skills__type {
+    padding: 10px;
+    font-family: 'Pushster', cursive;
+    font-size: 3em;
+    text-transform: uppercase;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(rgb(0, 4, 255), rgb(0, 174, 255), rgb(0, 4, 255));
+
+    &:hover {
+        background-image: linear-gradient(rgb(0, 174, 255), rgb(0, 4, 255), rgb(0, 174, 255));
+        transition-duration: 1s;
+    }
+}
+
+.skills {
+    width: 400px;
+    display: flex;
+    padding: 25px;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: 'Abel', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.7em;
+    border: 1px dotted rgba(0, 174, 255, 0.377);
+}
+
+.skills__level {
+    display: flex;
+}
+
+.skills__visual {
+    width: 25px;
+    height: 25px;
+    margin: 15px;
+    border: 3px solid rgb(0, 4, 255);
+    border-radius: 50%;
+}
+
+.skills__visual_blue {
+    background-color: rgb(0, 174, 255);
+}
+
+//! #contacts {
+// !    color: rgb(57, 185, 210);
+//! }
