@@ -86,7 +86,7 @@ body {
     transition-duration: .5s;
 
     &:hover {
-        color: rgb(133, 116, 23);
+        color: rgb(0, 4, 255);
     }
 }
 
@@ -97,6 +97,7 @@ body {
 // ! About me section
 
 .article__text_bigger {
+    margin-top: 15px;
     font-size: 1.5em;
 }
 
@@ -177,7 +178,16 @@ body {
 .contacts__container {
     display: flex;
     justify-content: space-between;
-    
+
+}
+
+
+.contact__link {
+    transition-duration: .5s;
+
+    &:hover {
+        color: rgb(0, 4, 255);
+    }
 }
 
 .contact__logo {

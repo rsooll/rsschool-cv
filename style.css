@@ -82,7 +82,7 @@ body {
           transition-duration: 0.5s;
 }
 .nav__link:hover {
-  color: #857417;
+  color: #0004ff;
 }
 
 .nav_font {
@@ -90,6 +90,7 @@ body {
 }
 
 .article__text_bigger {
+  margin-top: 15px;
   font-size: 1.5em;
 }
 
@@ -185,6 +186,14 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.contact__link {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+.contact__link:hover {
+  color: #0004ff;
 }
 
 .contact__logo {
