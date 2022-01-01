@@ -13,10 +13,6 @@
   font-family: "Abel", sans-serif;
   src: url(fonts/Abel.ttf);
 }
-body {
-  position: relative;
-}
-
 .list {
   list-style-type: none;
 }
@@ -26,24 +22,28 @@ body {
   color: black;
 }
 
-.title_fonts {
+.title_font {
   font-family: "Pushster", cursive;
   text-align: center;
 }
 
-h2 {
-  color: #39b9d2;
-}
-
-.text_fonts {
+.text_font {
   font-family: "Abel", sans-serif;
   font-size: 1.2em;
   line-height: 1.7em;
+  padding: 0 15px;
 }
 
-.header__title {
-  font-size: 2.5em;
-  padding-top: 20px;
+.section_title {
+  font-size: 2em;
+  padding: 20px;
+  color: #39b9d2;
+}
+
+body {
+  position: relative;
+  background-image: url(assets/img/bac.jpg);
+  background-size: contain;
 }
 
 .CVWrapper {
@@ -52,8 +52,13 @@ h2 {
   margin: 0 auto;
 }
 
+.header__title {
+  font-size: 2.5em;
+  padding-top: 20px;
+}
+
 .header {
-  background-image: url(assets/img/header_bac.webp);
+  background-image: url(assets/img/header_bac.png);
   background-size: cover;
 }
 
@@ -67,26 +72,21 @@ h2 {
           justify-content: center;
 }
 
-.nav__items {
+.nav__item {
   padding: 20px;
 }
-.nav__items :hover {
-  color: #857417;
+
+.nav__link {
+  color: black;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
+}
+.nav__link:hover {
+  color: #857417;
 }
 
 .nav_font {
   font-size: 1.5em;
-}
-
-.section_title {
-  font-size: 2em;
-  padding: 20px;
-}
-
-.article__text {
-  padding: 0 15px;
 }
 
 .article__text_bigger {
@@ -99,34 +99,19 @@ h2 {
   padding-right: 5px;
 }
 
-.container {
+.skills__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 20px;
 }
 
-.skills__type {
-  padding: 10px;
-  font-family: "Pushster", cursive;
-  font-size: 3em;
-  text-transform: uppercase;
-  color: transparent;
-  -webkit-background-clip: text;
-          background-clip: text;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#0004ff), color-stop(#00aeff), to(#0004ff));
-  background-image: linear-gradient(#0004ff, #00aeff, #0004ff);
-}
-.skills__type:hover {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#00aeff), color-stop(#0004ff), to(#00aeff));
-  background-image: linear-gradient(#00aeff, #0004ff, #00aeff);
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-}
-
-.skills {
+.skill__item {
   width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -142,6 +127,22 @@ h2 {
   font-size: 1.2em;
   line-height: 1.7em;
   border: 1px dotted rgba(0, 174, 255, 0.377);
+}
+
+.skill__title {
+  padding: 10px;
+  font-family: "Pushster", cursive;
+  font-size: 3em;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0004ff), color-stop(#00aeff), to(#0004ff));
+  background-image: linear-gradient(#0004ff, #00aeff, #0004ff);
+}
+.skill__title:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#00aeff), color-stop(#0004ff), to(#00aeff));
+  background-image: linear-gradient(#00aeff, #0004ff, #00aeff);
 }
 
 .skills__level {
@@ -160,4 +161,32 @@ h2 {
 
 .skills__visual_blue {
   background-color: #00aeff;
+}
+
+.project_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.project__img {
+  max-width: 600px;
+}
+
+.contacts__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact__logo {
+  max-width: 400px;
 }

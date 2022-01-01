@@ -7,48 +7,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rsooll CV</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/img/logo1.png" type="image/x-icon">
 </head>
 
 <body>
+
     <div class="CVWrapper">
+        <!-- header -->
+
         <header class="header">
-            <h1 class="header__title title_fonts">HELLO! This is Rsooll's CV, <br>the future frontend programmer</h1>
+            <h1 class="header__title title_font">HELLO! This is Rsooll's CV, <br>the future frontend programmer</h1>
 
             <nav>
                 <ul class="header__nav list">
-                    <li class="nav__items text_fonts nav_font"><a href="#about" class="nav__link link">About me</a>
+                    <li class="nav__item text_font nav_font"><a href="#about" class="nav__link link">About me</a>
                     </li>
-                    <li class="nav__items text_fonts nav_font"> <a href="#skills" class="nav__link link">Skills</a>
+                    <li class="nav__item text_font nav_font"> <a href="#skills" class="nav__link link">Skills</a>
                     </li>
-                    <li class="nav__items text_fonts nav_font"><a href="#project" class="nav__link link">Project</a>
+                    <li class="nav__item text_font nav_font"><a href="#projects" class="nav__link link">Projects</a>
                     </li>
-                    <li class="nav__items text_fonts nav_font"><a href="#contacts" class="nav__link link">Contacts</a>
+                    <li class="nav__item text_font nav_font"><a href="#contacts" class="nav__link link">Contacts</a>
                     </li>
                 </ul>
             </nav>
         </header>
 
+        <!-- main -->
+
         <main class="main">
             <article class="article">
-                <h2 id="about" class="section section_title title_fonts">About me</h2>
 
-                <div class="text_fonts article__text text"> <span class="article__text_bigger">Hello!</span> <br> My
+                <!--  about section -->
+
+                <h2 id="about" class="section_title title_font">About me</h2>
+
+
+
+                <p class="text_font"> <span class="article__text_bigger">Hello!</span> <br> My
                     name is Igor. I am a lawyer. But, everything is changing and now I want to try myself in web
-                    development. <br> I chose web development for several reasons:
+                    development. <br>
+                    I chose web development for several reasons:
 
-                </div>
+                </p>
                 <ul class="list">
-                    <li class="text_fonts list_item_icons">it's interesting and promising;</li>
-                    <li class="text_fonts list_item_icons">this is working with the visual component of websites;</li>
-                    <li class="text_fonts list_item_icons">it is immediately obvious that you have succeeded,</li>
-                    <li class="text_fonts list_item_icons">or failed.</li>
+                    <li class="text_font list_item_icons">it's interesting and promising;</li>
+                    <li class="text_font list_item_icons">this is working with the visual component of websites;</li>
+                    <li class="text_font list_item_icons">it is immediately obvious that you have succeeded,</li>
+                    <li class="text_font list_item_icons">or failed.</li>
+                </ul>
+                <br>
+                <p class="text_font">My strengths</p>
+                <ul class="list">
+                    <li class="text_font list_item_icons">stress resistance;</li>
+                    <li class="text_font list_item_icons">communication;</li>
+                    <li class="text_font list_item_icons">hardworking;</li>
+                    <li class="text_font list_item_icons">creativity;</li>
+                    <li class="text_font list_item_icons">honest and others.</li>
                 </ul>
 
-                <h2 id="skills" class="section section_title title_fonts"> Skills </h2>
-                <div class="container">
 
-                    <div class="container__items html__container  skills">
-                        <div class="skills__type">html</div>
+                <!--  Skills section -->
+                <h2 id="skills" class="section_title title_font"> Skills </h2>
+
+
+                <div class="skills__container">
+
+                    <div class="skill__item">
+                        <p class="skill__title">html</p>
                         <div class="skills__level">
                             <div class="skills__visual skills__visual_blue"></div>
                             <div class="skills__visual skills__visual_blue"></div>
@@ -58,8 +83,8 @@
                         </div>
                     </div>
 
-                    <div class="container__items css__container skills">
-                        <div class="skills__type">css</div>
+                    <div class="skill__item">
+                        <p class="skill__title">css</p>
                         <div class="skills__level">
                             <div class="skills__visual skills__visual_blue"></div>
                             <div class="skills__visual skills__visual_blue"></div>
@@ -68,8 +93,8 @@
                             <div class="skills__visual"></div>
                         </div>
                     </div>
-                    <div class="container__items JavaScript__container  skills">
-                        <div class="skills__type">JavaScript</div>
+                    <div class="skill__item">
+                        <p class="skill__title">JavaScript</p>
                         <div class="skills__level">
                             <div class="skills__visual skills__visual_blue"></div>
                             <div class="skills__visual"></div>
@@ -78,8 +103,8 @@
                             <div class="skills__visual"></div>
                         </div>
                     </div>
-                    <div class="container__items scss__container  skills">
-                        <div class="skills__type">scss</div>
+                    <div class="skill__item">
+                        <p class="skill__title">scss</p>
                         <div class="skills__level">
                             <div class="skills__visual skills__visual_blue"></div>
                             <div class="skills__visual skills__visual_blue"></div>
@@ -88,8 +113,8 @@
                             <div class="skills__visual"></div>
                         </div>
                     </div>
-                    <div class="container__items git__container  skills">
-                        <div class="skills__type">git</div>
+                    <div class="skill__item">
+                        <p class="skill__title">git</p>
                         <div class="skills__level">
                             <div class="skills__visual skills__visual_blue"></div>
                             <div class="skills__visual skills__visual_blue"></div>
@@ -98,8 +123,8 @@
                             <div class="skills__visual"></div>
                         </div>
                     </div>
-                    <div class="container__items photoshop__container skills">
-                        <div class="skills__type">photoshop</div>
+                    <div class="skill__item">
+                        <p class="skill__title">photoshop</p>
                         <div class="skills__level">
                             <div class="skills__visual skills__visual_blue"></div>
                             <div class="skills__visual skills__visual_blue"></div>
@@ -110,22 +135,60 @@
                     </div>
 
                 </div>
-                <h2 id="projects" class="section section_title title_fonts"> Projects </h2>
 
-                <div class="article__item container ">
 
-                    <div> </div>
+
+
+                <!--  projects section -->
+
+                <h2 id="projects" class="section_title title_font"> Projects </h2>
+
+                <div class="project_container">
+                    <div class="text_font"> <a href="https://grodno.advokat-leichonok.com/" target="_blank"
+                            class="project__link"><img src="assets/img/projectPhoto.webp" alt="projectPhoto"
+                                class="project__img"></a> </div>
+
+                    <p class="text_font"> On the left is my project. <br> A good opportunity
+                        to practice in web
+                        development and get a website at the same time. <br><br>I have earlier projects, but they are
+                        too bad for demonstration :)
+                    </p>
                 </div>
-                <h2 id="contacts" class="section section_title title_fonts"> Contacts </h2>
-                <div class="article__item container ">
 
 
-                    <img src="" alt="">
-                    <div></div>
+                <!--  contacts section -->
+
+
+                <h2 id="contacts" class="section_title title_font"> Contacts </h2>
+
+
+
+                <div class="contacts__container">
+
+
+
+                    <p class="text_font"> Of course it would be nice to upload
+                        my photo, but the avatar is more interesting to me.  In this avatar, the first letters of my
+                        name, last
+                        name and patronymic are encrypted.</p>
+
+
+          
+
+
+
+
+
+                    <div><img src="assets/img/logo1.png" alt="my Logo" class="contact__logo"></div>
+
                 </div>
 
             </article>
+            <!-- footer -->
+            <footer>
 
+
+            </footer>
 
 
 
