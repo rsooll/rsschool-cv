@@ -1,0 +1,251 @@
+// !общее
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    border: none;
+}
+
+@font-face {
+    font-family: 'Pushster', cursive;
+    src: url(fonts/Pushster.ttf);
+}
+
+@font-face {
+    font-family: 'Abel', sans-serif;
+    src: url(fonts/Abel.ttf);
+}
+
+@font-face {
+    font-family: 'M PLUS Code Latin', sans-serif;
+    src: url(fonts/code.ttf);
+}
+
+
+
+
+.list {
+    list-style-type: none;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+
+.title_font {
+    font-family: 'Pushster', cursive;
+    text-align: center;
+}
+
+.text_font {
+    font-family: 'Abel', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.7em;
+    padding: 0 15px;
+}
+
+.section_title {
+    font-size: 2em;
+    padding: 20px;
+    color: rgb(57, 185, 210);
+}
+
+// !по разделам
+body {
+    position: relative;
+    background-image: url(assets/img/bac.webp);
+    background-size: contain;
+}
+
+.CVWrapper {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header__title {
+    font-size: 2.5em;
+    padding-top: 20px;
+}
+
+.header {
+    background-image: url(assets/img/header_bac.webp);
+    background-size: cover;
+    // ! background-size: contain; ПРОВЕРИТЬ, КАК ЛУЧШЕ ВЫГЛЯДИТ НА РАЗНЫХ РАЗРЕШЕНИЯХ
+}
+
+.header__nav {
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.nav__item {
+    padding: 20px;
+
+}
+
+.nav__link {
+    color: black;
+    transition-duration: .5s;
+
+    &:hover {
+        color: rgb(0, 4, 255);
+    }
+}
+
+.nav_font {
+    font-size: 1.5em;
+}
+
+// ! About me section
+
+.article__text_bigger {
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+
+.list_item_icons {
+    &::before {
+        content: '\2611';
+        color: rgb(0, 174, 255);
+        padding-right: 5px;
+
+    }
+}
+
+// ! Skills section
+
+
+.skills__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.skill__item {
+    width: 400px;
+    display: flex;
+    padding: 25px;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: 'Abel', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.7em;
+    border: 1px dotted rgba(0, 174, 255, 0.377);
+}
+
+.skill__title {
+    padding: 10px;
+    font-family: 'Pushster', cursive;
+    font-size: 3em;
+    text-transform: uppercase;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(rgb(0, 4, 255), rgb(0, 174, 255), rgb(0, 4, 255));
+
+    &:hover {
+        background-image: linear-gradient(rgb(0, 174, 255), rgb(0, 4, 255), rgb(0, 174, 255));
+    }
+}
+
+.skills__level {
+    display: flex;
+}
+
+.skills__visual {
+    width: 25px;
+    height: 25px;
+    margin: 15px;
+    border: 3px solid rgb(0, 4, 255);
+    border-radius: 50%;
+}
+
+.skills__visual_blue {
+    background-color: rgb(0, 174, 255);
+}
+
+// ! code section
+.code_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.code {
+    font-family: 'M PLUS Code Latin', sans-serif;
+}
+
+.code_blue {
+    color: blue;
+}
+
+.code_purple {
+    color: rgb(168, 7, 168);
+}
+
+.code_yellow {
+    color: rgb(136, 136, 0);
+}
+
+
+
+// ! project section
+.project_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project__img {
+    max-width: 600px;
+}
+
+// ! contact section
+.contacts__container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.contact__link {
+    transition-duration: .5s;
+
+    &:hover {
+        color: rgb(0, 4, 255);
+    }
+}
+
+.contact__logo {
+    max-width: 400px;
+}
+
+// ! footer section
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 20px;
+}
+
+.social__container {
+    display: flex;
+    align-items: center;
+}
+
+.footer_img {
+    margin: 0 10px;
+}
+
+.img__social {
+    width: 50px;
+    height: 50px;
+}
+
+.RSSchool__logo {
+    height: 50px;
+}
