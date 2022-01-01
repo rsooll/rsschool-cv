@@ -15,6 +15,11 @@
     src: url(fonts/Abel.ttf);
 }
 
+@font-face {
+    font-family: 'M PLUS Code Latin', sans-serif;
+    src: url(fonts/code.ttf);
+}
+
 
 
 
@@ -49,7 +54,7 @@
 // !по разделам
 body {
     position: relative;
-    background-image: url(assets/img/bac.jpg);
+    background-image: url(assets/img/bac.webp);
     background-size: contain;
 }
 
@@ -65,7 +70,7 @@ body {
 }
 
 .header {
-    background-image: url(assets/img/header_bac.png);
+    background-image: url(assets/img/header_bac.webp);
     background-size: cover;
     // ! background-size: contain; ПРОВЕРИТЬ, КАК ЛУЧШЕ ВЫГЛЯДИТ НА РАЗНЫХ РАЗРЕШЕНИЯХ
 }
@@ -162,8 +167,32 @@ body {
     background-color: rgb(0, 174, 255);
 }
 
-// ! project section
+// ! code section
+.code_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
+.code {
+    font-family: 'M PLUS Code Latin', sans-serif;
+}
+
+.code_blue {
+    color: blue;
+}
+
+.code_purple {
+    color: rgb(168, 7, 168);
+}
+
+.code_yellow {
+    color: rgb(136, 136, 0);
+}
+
+
+
+// ! project section
 .project_container {
     display: flex;
     flex-wrap: wrap;

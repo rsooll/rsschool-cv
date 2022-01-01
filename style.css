@@ -13,6 +13,10 @@
   font-family: "Abel", sans-serif;
   src: url(fonts/Abel.ttf);
 }
+@font-face {
+  font-family: "M PLUS Code Latin", sans-serif;
+  src: url(fonts/code.ttf);
+}
 .list {
   list-style-type: none;
 }
@@ -42,7 +46,7 @@
 
 body {
   position: relative;
-  background-image: url(assets/img/bac.jpg);
+  background-image: url(assets/img/bac.webp);
   background-size: contain;
 }
 
@@ -58,7 +62,7 @@ body {
 }
 
 .header {
-  background-image: url(assets/img/header_bac.png);
+  background-image: url(assets/img/header_bac.webp);
   background-size: cover;
 }
 
@@ -162,6 +166,33 @@ body {
 
 .skills__visual_blue {
   background-color: #00aeff;
+}
+
+.code_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.code {
+  font-family: "M PLUS Code Latin", sans-serif;
+}
+
+.code_blue {
+  color: blue;
+}
+
+.code_purple {
+  color: #a807a8;
+}
+
+.code_yellow {
+  color: #888800;
 }
 
 .project_container {
